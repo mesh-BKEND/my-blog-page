@@ -40,22 +40,6 @@ video {
   max-width: 100%;
 }
 
-.section-container {
-  animation: scrolling 6s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0% cover 50%;
-}
-@keyframes scrolling {
-  from {
-    opacity: 0;
-    transform: scale(0) translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) translateX(0);
-  }
-}
-
 /* Navigation section*/
 nav {
   position: fixed;
@@ -569,6 +553,7 @@ section {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-family: "Playfair Display", serif;
+  padding:1rem;
 }
 .philosophy-cards {
   display: grid;
@@ -605,12 +590,14 @@ section {
 .quote {
   font-size: 3rem;
   color: var(--accent);
+  color:lime;
   margin-bottom: 1rem;
 }
 
 .tip {
   margin: 1rem;
   color: var(--accent);
+  color:lime;
   font-weight: bold;
 }
 
